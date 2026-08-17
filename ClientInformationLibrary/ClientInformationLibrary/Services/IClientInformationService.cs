@@ -1,4 +1,4 @@
-﻿namespace ClientInformation.Library.Core.Services
+namespace ClientInformation.Library.Core.Services
 {
     public interface IClientInformationBackendService
     {

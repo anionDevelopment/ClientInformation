@@ -1,4 +1,4 @@
-﻿using ClientInformationBackend.Core.Configuration;
+using ClientInformationBackend.Core.Configuration;
 using GRYLibrary.Core.Misc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

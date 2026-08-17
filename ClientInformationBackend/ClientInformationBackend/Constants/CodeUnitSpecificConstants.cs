@@ -1,4 +1,4 @@
-﻿namespace ClientInformationBackend.Core.Constants
+namespace ClientInformationBackend.Core.Constants
 {
     public class CodeUnitSpecificConstants
     {

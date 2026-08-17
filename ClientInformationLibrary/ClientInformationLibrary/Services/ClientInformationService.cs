@@ -1,4 +1,4 @@
-﻿using ClientInformation.Library.Core.Model;
+using ClientInformation.Library.Core.Model;
 using GRYLibrary.Core.APIServer.Settings.Configuration;
 using GRYLibrary.Core.Exceptions;
 using NetTools;

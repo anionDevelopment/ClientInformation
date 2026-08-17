@@ -1,4 +1,4 @@
-﻿using ClientInformation.Library.Core.Services;
+using ClientInformation.Library.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

@@ -9,7 +9,7 @@
     <IsPackable>false</IsPackable>
     <PreserveCompilationContext>false</PreserveCompilationContext>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-    <Copyright>Copyright © 2025 Marius Göcke</Copyright>
+    <Copyright>Copyright © 2026 Marius Göcke</Copyright>
     <Description>ClientInformationBackend is a service to retrieve information of the own HTTP-client.</Description>
     <PackageProjectUrl>https://github.com/anionDevelopment/ClientInformation</PackageProjectUrl>
     <RepositoryUrl>https://github.com/anionDevelopment/ClientInformation.git</RepositoryUrl>
@@ -59,8 +59,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.9.1" />
-    <PackageReference Include="ExtendedXmlSerializer" Version="3.9.6" />
-    <PackageReference Include="GRYLibrary" Version="2.0.23" />
+    <PackageReference Include="ExtendedXmlSerializer" Version="3.10.0" />
+    <PackageReference Include="GRYLibrary" Version="2.0.27" />
     <PackageReference Include="IPAddressRange" Version="6.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.11" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />

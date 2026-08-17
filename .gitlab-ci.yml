@@ -4,19 +4,20 @@ variables:
   GIT_DEPTH: 0
   GIT_SUBMODULE_STRATEGY: recursive
   GIT_SUBMODULE_DEPTH: 0
+  IS_RUNNING_IN_SERVER_PIPELINE: "true"
+  IS_RUNNING_IN_GITLAB_PIPELINE: "true"
 workflow:
   rules:
     - if: '$CI_PIPELINE_SOURCE == "api"'
 run-script:
   stage: buildpipeline
   before_script:
+    - pip3 install scriptcollection --upgrade
     - scpreparebuildpipelineforgitlab
   script:
-    - scbuildcodeunits
+    - scbuildcodeunits --assertnonewchanges --verbosity 4 --targetenvironment "${TargetEnvironmentType:-QualityCheck}"
   tags:
     - scriptcollection
   artifacts:
     paths:
-      - ClientInformation/Other/Artifacts
-      - ClientInformationBackend/Other/Artifacts
-      - ClientInformationLibrary/Other/Artifacts
+      - Other/Resources/Artifacts

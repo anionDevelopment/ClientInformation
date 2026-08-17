@@ -1,4 +1,4 @@
-﻿using ClientInformationBackend.Core.Configuration;
+using ClientInformationBackend.Core.Configuration;
 using GRYLibrary.Core.APIServer.Services.Init;
 using GRYLibrary.Core.APIServer.Utilities;
 using GRYLibrary.Core.APIServer.Utilities.InitializationStates;

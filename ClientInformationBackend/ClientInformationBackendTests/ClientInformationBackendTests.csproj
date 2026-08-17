@@ -9,7 +9,7 @@
     <IsPackable>false</IsPackable>
     <PreserveCompilationContext>false</PreserveCompilationContext>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
-    <Copyright>Copyright © 2025 Marius Göcke</Copyright>
+    <Copyright>Copyright © 2026 Marius Göcke</Copyright>
     <Description>ClientInformationBackendTests is the test-project for ClientInformationBackend.</Description>
     <PackageProjectUrl>https://github.com/anionDevelopment/ClientInformation</PackageProjectUrl>
     <RepositoryUrl>https://github.com/anionDevelopment/ClientInformation.git</RepositoryUrl>
@@ -61,8 +61,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="ExtendedXmlSerializer" Version="3.9.6" />
-    <PackageReference Include="GRYLibrary" Version="2.0.23" />
+    <PackageReference Include="ExtendedXmlSerializer" Version="3.10.0" />
+    <PackageReference Include="GRYLibrary" Version="2.0.27" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.11" />
     <PackageReference Include="Microsoft.CodeCoverage" Version="18.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.9" />

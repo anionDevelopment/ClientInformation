@@ -1,4 +1,4 @@
-﻿using GRYLibrary.Core.Logging.GeneralPurposeLogger;
+using GRYLibrary.Core.Logging.GeneralPurposeLogger;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Collections.Generic;
 using System.Threading;

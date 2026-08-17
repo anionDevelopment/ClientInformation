@@ -1,6 +1,7 @@
-﻿using ClientInformationBackend.Core.Constants;
+using ClientInformationBackend.Core.Constants;
 using GRYLibrary.Core.APIServer.BaseServices;
 using GRYLibrary.Core.APIServer.Settings;
+using GRYLibrary.Core.APIServer.Services.Logger;
 using GRYLibrary.Core.Logging.GRYLogger;
 using System.Diagnostics.Metrics;
 using System;
@@ -13,7 +14,10 @@ namespace ClientInformationBackend.Core.Services
         private readonly Meter _AmountOfDataSetsMeter;
         public Counter<long> MetricAmountOfDataSets { get; private set; }
         public TimeSpan AdditionalDelay { get; set; } = TimeSpan.FromSeconds(20);
-        public MetricsService(IApplicationConstants<CodeUnitSpecificConstants> constants, IGRYLog logger) : base(constants.ExecutionMode, logger)
+        // The log is taken as IServerLog and not as IGRYLog, because IServerLog is the one which is
+        // registered in the dependency-injection-container. Asking for IGRYLog compiles, but the application
+        // then does not start ("Unable to resolve service for type ...").
+        public MetricsService(IApplicationConstants<CodeUnitSpecificConstants> constants, IServerLog logger) : base(constants.ExecutionMode, logger.Logger)
         {
             this._AmountOfDataSetsMeter = new Meter(CodeUnitSpecificConstants.MetricAmountOfDataSetsName);
             this.MetricAmountOfDataSets = this._AmountOfDataSetsMeter.CreateCounter<long>(CodeUnitSpecificConstants.MetricAmountOfDataSetsName);
