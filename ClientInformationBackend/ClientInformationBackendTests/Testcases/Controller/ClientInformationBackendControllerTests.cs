@@ -15,7 +15,7 @@ namespace ClientInformation.Backend.Tests.Testcases.Controller
     public class ClientInformationBackendControllerTests
     {
         [TestMethod]
-        [TestProperty(nameof(TestKind), nameof(TestKind.UnitTest))]
+        [TestProperty(nameof(GRYLibrary.Core.Misc.TestKind), nameof(GRYLibrary.Core.Misc.TestKind.UnitTest))]
         public void TestGetClientIPAddressReturnsIPFromHttpContext()
         {
             // arrange
@@ -33,7 +33,7 @@ namespace ClientInformation.Backend.Tests.Testcases.Controller
      
 
         [TestMethod]
-        [TestProperty(nameof(TestKind), nameof(TestKind.UnitTest))]
+        [TestProperty(nameof(GRYLibrary.Core.Misc.TestKind), nameof(GRYLibrary.Core.Misc.TestKind.UnitTest))]
         public void TestCalculateResponseForClientInformationRequestSerializesRecord()
         {
             // arrange

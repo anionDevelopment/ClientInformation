@@ -1,6 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
+    <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
     <Authors>Marius Göcke</Authors>
     <Version>1.0.15</Version>
     <AssemblyVersion>1.0.15</AssemblyVersion>
@@ -9,6 +10,7 @@
     <IsPackable>false</IsPackable>
     <PreserveCompilationContext>false</PreserveCompilationContext>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     <Copyright>Copyright © 2026 Marius Göcke</Copyright>
     <Description>ClientInformationBackendTests is the test-project for ClientInformationBackend.</Description>
     <PackageProjectUrl>https://github.com/anionDevelopment/ClientInformation</PackageProjectUrl>
@@ -57,34 +59,34 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClientInformationBackend\ClientInformationBackend.csproj" />
-    <PackageReference Include="coverlet.collector" Version="6.0.4">
+    <PackageReference Include="coverlet.collector" Version="[6.0.4]">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="ExtendedXmlSerializer" Version="3.10.0" />
-    <PackageReference Include="GRYLibrary" Version="2.0.27" />
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.11" />
-    <PackageReference Include="Microsoft.CodeCoverage" Version="18.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="10.0.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.9">
+    <PackageReference Include="ExtendedXmlSerializer" Version="[3.10.0]" />
+    <PackageReference Include="GRYLibrary" Version="[2.0.31]" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="[2.3.11]" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="[18.0.1]" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[10.0.9]" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="[10.0.9]" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="[10.0.9]">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="10.0.9" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.9" />
-    <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="10.0.9" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.9" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.9" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
-    <PackageReference Include="Moq" Version="4.20.72" />
-    <PackageReference Include="MSTest.TestAdapter" Version="4.0.2" />
-    <PackageReference Include="MSTest.TestFramework" Version="4.0.2" />
-    <PackageReference Include="NJsonSchema" Version="11.5.2" />
-    <PackageReference Include="NSwag.AspNetCore" Version="14.6.3" />
-    <PackageReference Include="prometheus-net" Version="8.2.1" />
-    <PackageReference Include="System.Collections.Immutable" Version="10.0.9" />
-    <PackageReference Include="System.Reactive" Version="6.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="[10.0.9]" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="[10.0.9]" />
+    <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="[10.0.9]" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="[10.0.9]" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[10.0.9]" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="[18.0.1]" />
+    <PackageReference Include="Moq" Version="[4.20.72]" />
+    <PackageReference Include="MSTest.TestAdapter" Version="[4.0.2]" />
+    <PackageReference Include="MSTest.TestFramework" Version="[4.0.2]" />
+    <PackageReference Include="NJsonSchema" Version="[11.5.2]" />
+    <PackageReference Include="NSwag.AspNetCore" Version="[14.6.3]" />
+    <PackageReference Include="prometheus-net" Version="[8.2.1]" />
+    <PackageReference Include="System.Collections.Immutable" Version="[10.0.9]" />
+    <PackageReference Include="System.Reactive" Version="[6.1.0]" />
     <Reference Include="ClientInformationLibrary">
       <HintPath>..\Other\Resources\DependentCodeUnits\ClientInformationLibrary\BuildResult_DotNet_win-x64\ClientInformationLibrary.dll</HintPath>
     </Reference>

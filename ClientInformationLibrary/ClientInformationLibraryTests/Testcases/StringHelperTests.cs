@@ -1,3 +1,4 @@
+﻿using GRYLibrary.Core.Misc;
 using ClientInformation.Library.Core.Misc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -7,6 +8,7 @@ namespace ClientInformationLibrary.Tests.Testcases
     public class StringHelperTests
     {
         [TestMethod]
+        [TestProperty(nameof(GRYLibrary.Core.Misc.TestKind), nameof(GRYLibrary.Core.Misc.TestKind.UnitTest))]
         public void TestReverseReturnsReversedString()
         {
             // arrange
@@ -21,6 +23,7 @@ namespace ClientInformationLibrary.Tests.Testcases
         }
 
         [TestMethod]
+        [TestProperty(nameof(GRYLibrary.Core.Misc.TestKind), nameof(GRYLibrary.Core.Misc.TestKind.UnitTest))]
         public void TestIsNullOrWhiteSpaceDetectsBlankInput()
         {
             // arrange / act / assert

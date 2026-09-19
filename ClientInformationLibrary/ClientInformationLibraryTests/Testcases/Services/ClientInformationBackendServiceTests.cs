@@ -9,7 +9,7 @@ namespace ClientInformationLibrary.Tests.Testcases.Services
     public class ClientInformationBackendServiceTests
     {
         [TestMethod]
-        [TestProperty(nameof(TestKind), nameof(TestKind.UnitTest))]
+        [TestProperty(nameof(GRYLibrary.Core.Misc.TestKind), nameof(GRYLibrary.Core.Misc.TestKind.UnitTest))]
         public void TestGetClientInformationRecordForKnownIP()
         {
             // arrange

@@ -1,6 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
+    <RuntimeIdentifiers>win-x64;linux-x64;linux-arm64</RuntimeIdentifiers>
     <Authors>Marius Göcke</Authors>
     <Version>1.0.15</Version>
     <AssemblyVersion>1.0.15</AssemblyVersion>
@@ -9,6 +10,7 @@
     <IsPackable>false</IsPackable>
     <PreserveCompilationContext>false</PreserveCompilationContext>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     <Copyright>Copyright © 2026 Marius Göcke</Copyright>
     <Description>ClientInformationLibraryTests is the test-project for ClientInformationLibrary.</Description>
     <PackageProjectUrl>https://github.com/anionDevelopment/ClientInformation</PackageProjectUrl>
@@ -57,15 +59,15 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClientInformationLibrary\ClientInformationLibrary.csproj" />
-    <PackageReference Include="coverlet.collector" Version="6.0.4">
+    <PackageReference Include="coverlet.collector" Version="[6.0.4]">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="GRYLibrary" Version="2.0.27" />
-    <PackageReference Include="IPAddressRange" Version="6.3.0" />
-    <PackageReference Include="Microsoft.CodeCoverage" Version="18.0.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
-    <PackageReference Include="MSTest.TestAdapter" Version="4.0.2" />
-    <PackageReference Include="MSTest.TestFramework" Version="4.0.2" />
+    <PackageReference Include="GRYLibrary" Version="[2.0.31]" />
+    <PackageReference Include="IPAddressRange" Version="[6.3.0]" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="[18.0.1]" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="[18.0.1]" />
+    <PackageReference Include="MSTest.TestAdapter" Version="[4.0.2]" />
+    <PackageReference Include="MSTest.TestFramework" Version="[4.0.2]" />
   </ItemGroup>
 </Project>
