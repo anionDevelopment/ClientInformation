@@ -1,5 +1,12 @@
 @startuml CodeUnits-Overview
+skinparam defaultFontName "DejaVu Sans"
 title CodeUnits of ClientInformation
+
+[ClientInformationLibrary]
+note as ClientInformationLibraryNote
+  ClientInformationLibrary is a shared library containing common types and helpers used by ClientInformation and ClientInformationBackend.
+end note
+ClientInformationLibrary .. ClientInformationLibraryNote
 
 [ClientInformationBackend]
 note as ClientInformationBackendNote
@@ -13,6 +20,7 @@ note as ClientInformationNote
 end note
 ClientInformation .. ClientInformationNote
 
+ClientInformationBackend --> ClientInformationLibrary
 ClientInformation --> ClientInformationBackend
 
 @enduml

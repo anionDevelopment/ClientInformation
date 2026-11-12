@@ -11,7 +11,7 @@ But there are some [existing databases](https://github.com/sapics/ip-location-db
 And if the data itself are available for free then there should also exist a simple, free and self-hostable server which uses this data and provide it through a Rest-API.
 For this purpose you can use `ClientInformation`.
 With `ClientInformation` you can host this service on your own.
-The last update-date of the geo-ip-data is 2026-01-02.
+The last update-date of the geo-ip-data is 2026-08-12.
 
 ## Try out
 
@@ -26,10 +26,11 @@ You can just run `docker run -p 443:443 aniondev/clientinformation` to try out t
 
 This product requires to use `scbuildcodeunits` implemented/provided by [ScriptCollection](https://github.com/anionDev/ScriptCollection) to build the project.
 
-`ClientInformation` has 2 codeunits:
+`ClientInformation` has 3 codeunits:
 
 - [ClientInformation](./ClientInformation/Other/Reference/ReferenceContent/index.md)
 - [ClientInformationBackend](./ClientInformationBackend/Other/Reference/ReferenceContent/index.md)
+- [ClientInformationLibrary](./ClientInformationLibrary/Other/Reference/ReferenceContent/index.md)
 
 Please read also the "Get real ip-address of a client"-topic in the "Known issues"-section if you are running `ClientInformation` behind a reverse-proxy.
 
@@ -65,7 +66,7 @@ The reason why the default-value of `TrustForwardedHeader` can not be `true` is 
 IPv6 is currently not supported.
 Only IPv4-addresses are supported by `ClientInformation`.
 
-## Contribue
+## Contribute
 
 Contributions are always welcome.
 
