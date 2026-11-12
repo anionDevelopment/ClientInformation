@@ -1,4 +1,4 @@
-﻿using GRYLibrary.Core.Misc;
+using GRYLibrary.Core.Misc;
 using ClientInformation.Library.Core.Misc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

@@ -11,6 +11,7 @@
     <PreserveCompilationContext>false</PreserveCompilationContext>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <NuGetAuditMode>all</NuGetAuditMode>
     <Copyright>Copyright © 2026 Marius Göcke</Copyright>
     <Description>ClientInformationBackend is a service to retrieve information of the own HTTP-client.</Description>
     <PackageProjectUrl>https://github.com/anionDevelopment/ClientInformation</PackageProjectUrl>

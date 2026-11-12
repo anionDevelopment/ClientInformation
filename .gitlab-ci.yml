@@ -15,7 +15,8 @@ run-script:
     - pip3 install scriptcollection --upgrade
     - scpreparebuildpipelineforgitlab
   script:
-    - scbuildcodeunits --assertnonewchanges --verbosity 4 --targetenvironment "${TargetEnvironmentType:-QualityCheck}"
+    - if [ "${FastLane:-false}" = "true" ]; then fastlane_argument="--fastlane"; else fastlane_argument=""; fi
+    - scbuildcodeunits --assertnonewchanges --verbosity 4 --targetenvironment "${TargetEnvironmentType:-QualityCheck}" $fastlane_argument
   tags:
     - scriptcollection
   artifacts:
