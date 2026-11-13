@@ -14,8 +14,8 @@
     <dependencies>
       <group targetFramework="net10.0" />
     </dependencies>
-    <projectUrl>https://github.com/anionDev/ClientInformation</projectUrl>
-    <repository type="git" url="https://github.com/anionDev/ClientInformation.git" branch="main" commit="$commitid$" />
+    <projectUrl>https://github.com/anionDevelopment/ClientInformation</projectUrl>
+    <repository type="git" url="https://github.com/anionDevelopment/ClientInformation.git" branch="main" commit="$commitid$" />
     <readme>Documentation\ReadMe.md</readme>
   </metadata>
   <files>

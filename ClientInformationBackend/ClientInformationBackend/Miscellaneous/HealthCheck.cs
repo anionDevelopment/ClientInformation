@@ -1,3 +1,4 @@
+using GRYLibrary.Core.APIServer.Services.Logger;
 using GRYLibrary.Core.Logging.GeneralPurposeLogger;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using System.Collections.Generic;
@@ -10,9 +11,9 @@ namespace ClientInformationBackend.Core.Miscellaneous
     public class HealthCheck : IHealthCheck
     {
         private readonly IGeneralLogger _Logger;
-        public HealthCheck(IGeneralLogger logger)
+        public HealthCheck(IServerLog logger)
         {
-            this._Logger = logger;
+            this._Logger = logger.Logger;
         }
         public async Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = default)
         {

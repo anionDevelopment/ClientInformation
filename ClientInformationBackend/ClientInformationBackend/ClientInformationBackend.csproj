@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
@@ -85,7 +85,7 @@
     <PackageReference Include="NSwag.AspNetCore" Version="[14.6.3]" />
     <PackageReference Include="System.Drawing.Common" Version="[10.0.9]" />
     <PackageReference Include="System.Reactive" Version="[6.1.0]" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="[10.2.1]" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="[10.3.1]" />
     <Reference Include="ClientInformationLibrary">
       <HintPath>..\Other\Resources\DependentCodeUnits\ClientInformationLibrary\BuildResult_DotNet_win-x64\ClientInformationLibrary.dll</HintPath>
     </Reference>
