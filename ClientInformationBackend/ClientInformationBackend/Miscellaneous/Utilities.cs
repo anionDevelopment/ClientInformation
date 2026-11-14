@@ -1,4 +1,4 @@
-﻿namespace ClientInformationBackend.Core.Miscellaneous
+namespace ClientInformationBackend.Core.Miscellaneous
 {
     internal static class Utilities
     {

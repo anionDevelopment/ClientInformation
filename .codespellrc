@@ -1,0 +1,3 @@
+[codespell]
+# Skip generated, vendored and data-content: lock-files (hashes), the Visual-Studio-template-gitignore-files and the embedded geo-ip-data (two-letter country-codes).
+skip = ./.git,*/Other/Artifacts,*/Other/Resources/DependentCodeUnits,./.ScriptCollection/Cache,*/bin,*/obj,packages.lock.json,*/ClientInformationBackend/.gitignore,*/ClientInformationLibrary/.gitignore,*/Data/GeoIPData.csv

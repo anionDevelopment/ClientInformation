@@ -2,7 +2,7 @@
 
 ## Overview
 
-`ClientInformation` is a containerized service which basically runs [ClientInformationBackend](https://github.com/anionDev/ClientInformation/tree/main/ClientInformationBackend) in it.
+`ClientInformation` is a containerized service which basically runs [ClientInformationBackend](https://github.com/anionDevelopment/ClientInformation/tree/main/ClientInformationBackend) in it.
 
 This codeunit is implemented as usual `Dockerfile`.
 
@@ -17,7 +17,7 @@ To see an example of how to self-host `ClientInformation` see the [example-docke
 You can also running it on your own locally by running:
 
 ```sh
-git clone https://github.com/anionDev/ClientInformation.git
+git clone https://github.com/anionDevelopment/ClientInformation.git
 cd ClientInformation
 scbuildcodeunits
 cd ClientInformation/Other/Reference/ReferenceContent/Examples/MinimalDockerComposeFile

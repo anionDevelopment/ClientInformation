@@ -1,4 +1,3 @@
-﻿using ClientInformationBackend.Core.Services;
 using GRYLibrary.Core.APIServer.Settings.Configuration;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -6,8 +5,9 @@ using ClientInformationBackend.Core.Constants;
 using System.Net;
 using GRYLibrary.Core.Exceptions;
 using System.Text.Json;
+using ClientInformation.Library.Core.Services;
 
-namespace ClientInformationBackend.Core.Controller
+namespace ClientInformation.Backend.Core.Controller
 {
     [ApiController]
     [Route(ControllerRoute)]
@@ -41,7 +41,7 @@ namespace ClientInformationBackend.Core.Controller
         }
         internal static string CalculateResponseForClientInformationRequest(string ip, IClientInformationBackendService clientInformationBackendService)
         {
-            Model.ClientInformationBackendRecord result = clientInformationBackendService.GetClientInformationBackend(ip);
+            ClientInformation.Library.Core.Model.ClientInformationBackendRecord result = clientInformationBackendService.GetClientInformationRecord(ip);
             return JsonSerializer.Serialize(result, _JSONSettings);
         }
 
